@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Tickets</title>
+</head>
+<body style="font-family:Arial, sans-serif; background-color:#fafafa; padding:40px;">
+
+    <h2 style="color:#e41f25; text-align:center;">🎟️ Book Your Tickets</h2>
+
+    <form action="success.html" method="get" style="max-width:400px; margin:auto; background-color:white; padding:25px; border-radius:10px; box-shadow:0px 4px 10px rgba(0,0,0,0.2);">
+        <label>Name:</label><br>
+        <input type="text" name="name" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+        <label>Movie Name:</label><br>
+        <input type="text" name="movie" value="Kantara - Chapter 1" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+        <label>Date:</label><br>
+        <input type="date" name="date" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+        <label>Time:</label><br>
+        <input type="time" name="time" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+        <label>Number of Tickets:</label><br>
+        <input type="number" name="tickets" min="1" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+        <label>Seat Type:</label><br>
+        <select name="seat" style="width:100%; padding:8px; margin-bottom:10px;">
+            <option>Silver</option>
+            <option>Gold</option>
+            <option>Platinum</option>
+        </select><br>
+        <label>Snacks:</label><br>
+        <input type="checkbox" name="snack" value="Popcorn"> Popcorn
+        <input type="checkbox" name="snack" value="Cold Drink"> Cold Drink<br><br>
+        <label>Payment:</label><br>
+        <select name="payment" style="width:100%; padding:8px; margin-bottom:20px;">
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>UPI</option>
+        </select><br>
+        <input type="submit" value="Confirm Booking" style="background-color:#e41f25; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; width:100%;">
+    </form>
+
+</body>
+</html>
